@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02D828E22F9AC54005BA351 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02D828D22F9AC54005BA351 /* SecondViewController.swift */; };
+		E04A25A022F9C354007CA103 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04A259F22F9C354007CA103 /* ConfigViewController.swift */; };
 		E04E856C22F3149A002DB4B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E856B22F3149A002DB4B7 /* AppDelegate.swift */; };
 		E04E856E22F3149A002DB4B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E856D22F3149A002DB4B7 /* ViewController.swift */; };
 		E04E857122F3149A002DB4B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04E856F22F3149A002DB4B7 /* Main.storyboard */; };
 		E04E857322F3149B002DB4B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04E857222F3149B002DB4B7 /* Assets.xcassets */; };
 		E04E857622F3149B002DB4B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04E857422F3149B002DB4B7 /* LaunchScreen.storyboard */; };
+		E04E857E22F31A1B002DB4B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E857D22F31A1B002DB4B7 /* Extensions.swift */; };
+		E080F7BE22FB5C2800A2578D /* TVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080F7BD22FB5C2800A2578D /* TVController.swift */; };
+		E0C6393C22F3832A009722D6 /* e1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6392F22F38329009722D6 /* e1.mp3 */; };
+		E0C6393D22F3832A009722D6 /* c2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393022F38329009722D6 /* c2.mp3 */; };
+		E0C6393E22F3832A009722D6 /* b1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393122F38329009722D6 /* b1.mp3 */; };
+		E0C6393F22F3832A009722D6 /* d1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393222F38329009722D6 /* d1.mp3 */; };
+		E0C6394022F3832A009722D6 /* g1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393322F38329009722D6 /* g1.mp3 */; };
+		E0C6394122F3832A009722D6 /* f1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393422F38329009722D6 /* f1.mp3 */; };
+		E0C6394222F3832A009722D6 /* d1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393522F38329009722D6 /* d1s.mp3 */; };
+		E0C6394322F3832A009722D6 /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393622F38329009722D6 /* a1.mp3 */; };
+		E0C6394422F3832A009722D6 /* f1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393722F38329009722D6 /* f1s.mp3 */; };
+		E0C6394522F3832A009722D6 /* c1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393822F38329009722D6 /* c1.mp3 */; };
+		E0C6394622F3832A009722D6 /* a1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393922F38329009722D6 /* a1s.mp3 */; };
+		E0C6394722F3832A009722D6 /* c1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393A22F38329009722D6 /* c1s.mp3 */; };
+		E0C6394822F3832A009722D6 /* g1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0C6393B22F3832A009722D6 /* g1s.mp3 */; };
+		E0E58E0322FABCEA00F02C22 /* TBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E58E0222FABCEA00F02C22 /* TBController.swift */; };
+		E0E58E0522FABFB700F02C22 /* PianoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E58E0422FABFB700F02C22 /* PianoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E02D828D22F9AC54005BA351 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E04A259F22F9C354007CA103 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		E04E856822F3149A002DB4B7 /* 05-PianoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-PianoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04E856B22F3149A002DB4B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04E856D22F3149A002DB4B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +43,23 @@
 		E04E857222F3149B002DB4B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04E857522F3149B002DB4B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E04E857722F3149B002DB4B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04E857D22F31A1B002DB4B7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E080F7BD22FB5C2800A2578D /* TVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVController.swift; sourceTree = "<group>"; };
+		E0C6392F22F38329009722D6 /* e1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e1.mp3; sourceTree = "<group>"; };
+		E0C6393022F38329009722D6 /* c2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c2.mp3; sourceTree = "<group>"; };
+		E0C6393122F38329009722D6 /* b1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = b1.mp3; sourceTree = "<group>"; };
+		E0C6393222F38329009722D6 /* d1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d1.mp3; sourceTree = "<group>"; };
+		E0C6393322F38329009722D6 /* g1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g1.mp3; sourceTree = "<group>"; };
+		E0C6393422F38329009722D6 /* f1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f1.mp3; sourceTree = "<group>"; };
+		E0C6393522F38329009722D6 /* d1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d1s.mp3; sourceTree = "<group>"; };
+		E0C6393622F38329009722D6 /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1.mp3; sourceTree = "<group>"; };
+		E0C6393722F38329009722D6 /* f1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f1s.mp3; sourceTree = "<group>"; };
+		E0C6393822F38329009722D6 /* c1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c1.mp3; sourceTree = "<group>"; };
+		E0C6393922F38329009722D6 /* a1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1s.mp3; sourceTree = "<group>"; };
+		E0C6393A22F38329009722D6 /* c1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = c1s.mp3; sourceTree = "<group>"; };
+		E0C6393B22F3832A009722D6 /* g1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = g1s.mp3; sourceTree = "<group>"; };
+		E0E58E0222FABCEA00F02C22 /* TBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBController.swift; sourceTree = "<group>"; };
+		E0E58E0422FABFB700F02C22 /* PianoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +73,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E02D828B22F9874D005BA351 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E04E856D22F3149A002DB4B7 /* ViewController.swift */,
+				E02D828D22F9AC54005BA351 /* SecondViewController.swift */,
+				E04A259F22F9C354007CA103 /* ConfigViewController.swift */,
+				E0E58E0222FABCEA00F02C22 /* TBController.swift */,
+				E0E58E0422FABFB700F02C22 /* PianoViewController.swift */,
+				E080F7BD22FB5C2800A2578D /* TVController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E02D828C22F98767005BA351 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E04E857D22F31A1B002DB4B7 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E04E855F22F3149A002DB4B7 = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +114,35 @@
 			isa = PBXGroup;
 			children = (
 				E04E856B22F3149A002DB4B7 /* AppDelegate.swift */,
-				E04E856D22F3149A002DB4B7 /* ViewController.swift */,
+				E087FB3122F3828A00429926 /* PianoSounds */,
+				E02D828C22F98767005BA351 /* Extensions */,
+				E02D828B22F9874D005BA351 /* Controllers */,
 				E04E856F22F3149A002DB4B7 /* Main.storyboard */,
 				E04E857222F3149B002DB4B7 /* Assets.xcassets */,
 				E04E857422F3149B002DB4B7 /* LaunchScreen.storyboard */,
 				E04E857722F3149B002DB4B7 /* Info.plist */,
 			);
 			path = "05-PianoApp";
+			sourceTree = "<group>";
+		};
+		E087FB3122F3828A00429926 /* PianoSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E0C6393622F38329009722D6 /* a1.mp3 */,
+				E0C6393922F38329009722D6 /* a1s.mp3 */,
+				E0C6393122F38329009722D6 /* b1.mp3 */,
+				E0C6393822F38329009722D6 /* c1.mp3 */,
+				E0C6393A22F38329009722D6 /* c1s.mp3 */,
+				E0C6393022F38329009722D6 /* c2.mp3 */,
+				E0C6393222F38329009722D6 /* d1.mp3 */,
+				E0C6393522F38329009722D6 /* d1s.mp3 */,
+				E0C6392F22F38329009722D6 /* e1.mp3 */,
+				E0C6393422F38329009722D6 /* f1.mp3 */,
+				E0C6393722F38329009722D6 /* f1s.mp3 */,
+				E0C6393322F38329009722D6 /* g1.mp3 */,
+				E0C6393B22F3832A009722D6 /* g1s.mp3 */,
+			);
+			path = PianoSounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +203,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C6394822F3832A009722D6 /* g1s.mp3 in Resources */,
+				E0C6394522F3832A009722D6 /* c1.mp3 in Resources */,
+				E0C6394322F3832A009722D6 /* a1.mp3 in Resources */,
+				E0C6394122F3832A009722D6 /* f1.mp3 in Resources */,
+				E0C6393F22F3832A009722D6 /* d1.mp3 in Resources */,
+				E0C6394422F3832A009722D6 /* f1s.mp3 in Resources */,
+				E0C6393D22F3832A009722D6 /* c2.mp3 in Resources */,
+				E0C6394222F3832A009722D6 /* d1s.mp3 in Resources */,
 				E04E857622F3149B002DB4B7 /* LaunchScreen.storyboard in Resources */,
+				E0C6394622F3832A009722D6 /* a1s.mp3 in Resources */,
 				E04E857322F3149B002DB4B7 /* Assets.xcassets in Resources */,
+				E0C6394022F3832A009722D6 /* g1.mp3 in Resources */,
+				E0C6393C22F3832A009722D6 /* e1.mp3 in Resources */,
+				E0C6394722F3832A009722D6 /* c1s.mp3 in Resources */,
 				E04E857122F3149A002DB4B7 /* Main.storyboard in Resources */,
+				E0C6393E22F3832A009722D6 /* b1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E58E0522FABFB700F02C22 /* PianoViewController.swift in Sources */,
+				E02D828E22F9AC54005BA351 /* SecondViewController.swift in Sources */,
 				E04E856E22F3149A002DB4B7 /* ViewController.swift in Sources */,
+				E080F7BE22FB5C2800A2578D /* TVController.swift in Sources */,
+				E04E857E22F31A1B002DB4B7 /* Extensions.swift in Sources */,
+				E0E58E0322FABCEA00F02C22 /* TBController.swift in Sources */,
+				E04A25A022F9C354007CA103 /* ConfigViewController.swift in Sources */,
 				E04E856C22F3149A002DB4B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

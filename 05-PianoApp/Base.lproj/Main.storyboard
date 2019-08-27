@@ -1,24 +1,406 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C83-e5-MLx">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Configuración -->
+        <scene sceneID="h7b-Vy-ehe">
+            <objects>
+                <viewController id="tWK-0s-749" customClass="ConfigViewController" customModule="_5_PianoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3O-lp-7c0" customClass="C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQY-0J-b4E">
+                                <rect key="frame" x="20" y="54" width="335" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7uH-nu-ZjF">
+                                <rect key="frame" x="18" y="112" width="339" height="31"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="tWK-0s-749" eventType="valueChanged" id="VJd-Ko-PI5"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1l-Dw-gpq">
+                                <rect key="frame" x="104.66666666666669" y="363" width="166" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MUL-XC-n5u" firstAttribute="trailing" secondItem="zQY-0J-b4E" secondAttribute="trailing" constant="20" id="LAS-5r-ZsE"/>
+                            <constraint firstItem="7uH-nu-ZjF" firstAttribute="centerX" secondItem="m3O-lp-7c0" secondAttribute="centerX" id="NEw-4n-OMS"/>
+                            <constraint firstItem="zQY-0J-b4E" firstAttribute="leading" secondItem="MUL-XC-n5u" secondAttribute="leading" constant="20" id="Sdd-Kw-fMv"/>
+                            <constraint firstItem="MUL-XC-n5u" firstAttribute="trailing" secondItem="zQY-0J-b4E" secondAttribute="trailing" constant="20" id="Z24-S0-2pt"/>
+                            <constraint firstItem="7uH-nu-ZjF" firstAttribute="top" secondItem="zQY-0J-b4E" secondAttribute="bottom" constant="19" id="eP2-57-Q5E"/>
+                            <constraint firstItem="zQY-0J-b4E" firstAttribute="top" secondItem="MUL-XC-n5u" secondAttribute="top" constant="10" id="f1r-ME-6B1"/>
+                            <constraint firstItem="MUL-XC-n5u" firstAttribute="trailing" secondItem="7uH-nu-ZjF" secondAttribute="trailing" constant="20" id="ipW-Yf-iGT"/>
+                            <constraint firstItem="K1l-Dw-gpq" firstAttribute="centerX" secondItem="m3O-lp-7c0" secondAttribute="centerX" id="kSL-vF-p8U"/>
+                            <constraint firstItem="K1l-Dw-gpq" firstAttribute="centerY" secondItem="m3O-lp-7c0" secondAttribute="centerY" id="rXz-oU-oAP"/>
+                            <constraint firstItem="zQY-0J-b4E" firstAttribute="leading" secondItem="MUL-XC-n5u" secondAttribute="leading" constant="20" id="svg-uB-FBm"/>
+                            <constraint firstItem="7uH-nu-ZjF" firstAttribute="leading" secondItem="MUL-XC-n5u" secondAttribute="leading" constant="20" id="t0S-CZ-DOt"/>
+                            <constraint firstItem="zQY-0J-b4E" firstAttribute="centerX" secondItem="m3O-lp-7c0" secondAttribute="centerX" id="xcy-i8-XjV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MUL-XC-n5u"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="kxW-of-D5a">
+                        <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" red="0.14274999499999999" green="0.70628517869999996" blue="0.75385278460000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Configuración " id="e1R-bw-HWj">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Vqx-UR-KZb"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="zQY-0J-b4E" id="Zkk-nN-rK5"/>
+                        <outlet property="volumenLabel" destination="K1l-Dw-gpq" id="qSk-D2-Egd"/>
+                        <outlet property="volumenSlider" destination="7uH-nu-ZjF" id="qH2-qN-Rlu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hjv-tx-3cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="159"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="iix-rk-Kq4">
+            <objects>
+                <tabBarController id="C83-e5-MLx" customClass="TBController" customModule="_5_PianoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCv-b5-scK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="400-Nd-xey"/>
+                        <segue destination="tWK-0s-749" kind="relationship" relationship="viewControllers" id="ax3-bU-u9k"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8E-kZ-rP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2004" y="-119"/>
+        </scene>
+        <!--Piano-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PianoViewController" customModule="_5_PianoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzh-cR-pYd">
+                                <rect key="frame" x="16" y="136.66666666666666" width="343" height="76.666666666666657"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgD-61-GhX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zai-vs-yWn">
+                                <rect key="frame" x="16" y="52.000000000000007" width="343" height="76.666666666666686"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6l8-LQ-NY7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3E-Bp-nsh">
+                                <rect key="frame" x="16" y="221.33333333333334" width="343" height="76.666666666666657"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpr-we-mhm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-Eh-y0F">
+                                <rect key="frame" x="16" y="306" width="343" height="76.666666666666686"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcX-lc-FpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34n-Ne-Lcw">
+                                <rect key="frame" x="16" y="390.66666666666669" width="343" height="76.333333333333314"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hw0-Sn-KLY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whL-dp-cCe">
+                                <rect key="frame" x="16" y="475.00000000000006" width="343" height="76.666666666666686"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4g-Np-Nlr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-VJ-THR">
+                                <rect key="frame" x="16" y="559.66666666666663" width="343" height="76.666666666666629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQq-NX-Tu2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOy-Ov-8Dc">
+                                <rect key="frame" x="16" y="644.33333333333337" width="343" height="76.666666666666629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ej-1k-Dn6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOa-Go-LqX">
+                                <rect key="frame" x="136" y="107" width="223" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNY-48-svn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYd-oZ-qz8">
+                                <rect key="frame" x="136" y="199.33333333333334" width="223" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nh8-mX-E4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3B-Uc-Mul">
+                                <rect key="frame" x="136" y="366.66666666666669" width="223" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6HD-Od-F1h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNe-4I-Tic">
+                                <rect key="frame" x="136" y="452.33333333333331" width="223" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxd-QE-UKM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiM-pk-zQV">
+                                <rect key="frame" x="136" y="538.33333333333337" width="223" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3d-Qr-XfN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O3B-Uc-Mul" secondAttribute="trailing" constant="16" id="0vF-am-boM"/>
+                            <constraint firstItem="cOa-Go-LqX" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" multiplier="0.6" id="2Wk-Eg-ulZ"/>
+                            <constraint firstItem="ec0-VJ-THR" firstAttribute="top" secondItem="gNe-4I-Tic" secondAttribute="bottom" constant="61.5" id="6be-Kb-QrC"/>
+                            <constraint firstItem="O3B-Uc-Mul" firstAttribute="height" secondItem="cOa-Go-LqX" secondAttribute="height" id="7CB-eZ-fAn"/>
+                            <constraint firstItem="gNe-4I-Tic" firstAttribute="width" secondItem="cOa-Go-LqX" secondAttribute="width" id="7nn-nZ-abw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOa-Go-LqX" secondAttribute="trailing" constant="16" id="BRW-tA-ZDt"/>
+                            <constraint firstItem="LqS-Eh-y0F" firstAttribute="top" secondItem="B3E-Bp-nsh" secondAttribute="bottom" constant="8" id="Coo-Ii-EbF"/>
+                            <constraint firstItem="34n-Ne-Lcw" firstAttribute="top" secondItem="LqS-Eh-y0F" secondAttribute="bottom" constant="8" id="Cyh-Xy-qtU"/>
+                            <constraint firstItem="B3E-Bp-nsh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EsI-vG-7fF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wzh-cR-pYd" secondAttribute="trailing" constant="16" id="F7h-JV-o7B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ec0-VJ-THR" secondAttribute="trailing" constant="16" id="FTr-3b-2tP"/>
+                            <constraint firstItem="Zai-vs-yWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GgV-EY-Dan"/>
+                            <constraint firstItem="ZYd-oZ-qz8" firstAttribute="width" secondItem="cOa-Go-LqX" secondAttribute="width" id="HU1-9W-jNd"/>
+                            <constraint firstItem="whL-dp-cCe" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="Hoj-RN-0rl"/>
+                            <constraint firstItem="LqS-Eh-y0F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JCY-Nx-0Ff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TiM-pk-zQV" secondAttribute="trailing" constant="16" id="KxD-mS-65f"/>
+                            <constraint firstItem="ZYd-oZ-qz8" firstAttribute="height" secondItem="cOa-Go-LqX" secondAttribute="height" id="PXw-QE-B1k"/>
+                            <constraint firstItem="LqS-Eh-y0F" firstAttribute="top" secondItem="ZYd-oZ-qz8" secondAttribute="bottom" constant="60.5" id="PcD-rp-2OJ"/>
+                            <constraint firstItem="TOy-Ov-8Dc" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="PgH-43-9xh"/>
+                            <constraint firstItem="cOa-Go-LqX" firstAttribute="width" secondItem="Zai-vs-yWn" secondAttribute="width" multiplier="0.65" id="Pun-uM-XF1"/>
+                            <constraint firstItem="TiM-pk-zQV" firstAttribute="height" secondItem="cOa-Go-LqX" secondAttribute="height" id="UIO-8t-qOx"/>
+                            <constraint firstItem="Zai-vs-yWn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="VKU-0B-FLw"/>
+                            <constraint firstItem="cOa-Go-LqX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="VbW-RZ-haA"/>
+                            <constraint firstItem="whL-dp-cCe" firstAttribute="top" secondItem="O3B-Uc-Mul" secondAttribute="bottom" constant="62.5" id="WBi-sx-s94"/>
+                            <constraint firstItem="whL-dp-cCe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XKh-oY-bmH"/>
+                            <constraint firstItem="TOy-Ov-8Dc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Z5t-Av-PKR"/>
+                            <constraint firstItem="ec0-VJ-THR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZCt-Es-etV"/>
+                            <constraint firstItem="Wzh-cR-pYd" firstAttribute="top" secondItem="Zai-vs-yWn" secondAttribute="bottom" constant="8" id="ZEz-hC-kCK"/>
+                            <constraint firstItem="LqS-Eh-y0F" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="aFf-tw-gDZ"/>
+                            <constraint firstItem="34n-Ne-Lcw" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="aZy-n8-xcJ"/>
+                            <constraint firstItem="TiM-pk-zQV" firstAttribute="width" secondItem="cOa-Go-LqX" secondAttribute="width" id="ai2-cC-4h6"/>
+                            <constraint firstItem="gNe-4I-Tic" firstAttribute="height" secondItem="cOa-Go-LqX" secondAttribute="height" id="b3A-N4-msB"/>
+                            <constraint firstItem="Wzh-cR-pYd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bQS-rf-cq5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TOy-Ov-8Dc" secondAttribute="trailing" constant="16" id="ch0-GI-Gtt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zai-vs-yWn" secondAttribute="trailing" constant="16" id="dC2-bp-HG7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3E-Bp-nsh" secondAttribute="trailing" constant="16" id="fZB-u9-miO"/>
+                            <constraint firstItem="ec0-VJ-THR" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="giU-fv-2JA"/>
+                            <constraint firstItem="O3B-Uc-Mul" firstAttribute="width" secondItem="cOa-Go-LqX" secondAttribute="width" id="hnR-jB-AOq"/>
+                            <constraint firstItem="Wzh-cR-pYd" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="j0A-1d-iFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34n-Ne-Lcw" secondAttribute="trailing" constant="16" id="jZa-gE-TXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYd-oZ-qz8" secondAttribute="trailing" constant="16" id="jsH-IP-KX8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whL-dp-cCe" secondAttribute="trailing" constant="16" id="kco-os-5cl"/>
+                            <constraint firstItem="ec0-VJ-THR" firstAttribute="top" secondItem="whL-dp-cCe" secondAttribute="bottom" constant="8" id="koB-5P-6KD"/>
+                            <constraint firstItem="TOy-Ov-8Dc" firstAttribute="top" secondItem="ec0-VJ-THR" secondAttribute="bottom" constant="8" id="oLZ-Jv-7bD"/>
+                            <constraint firstItem="B3E-Bp-nsh" firstAttribute="height" secondItem="Zai-vs-yWn" secondAttribute="height" id="ogZ-pU-QdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TOy-Ov-8Dc" secondAttribute="bottom" constant="8" id="qfm-wW-6Q9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LqS-Eh-y0F" secondAttribute="trailing" constant="16" id="urI-Cj-Xnl"/>
+                            <constraint firstItem="B3E-Bp-nsh" firstAttribute="top" secondItem="Wzh-cR-pYd" secondAttribute="bottom" constant="8" id="w51-T7-LPg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOa-Go-LqX" secondAttribute="trailing" constant="16" id="wDr-ca-fR1"/>
+                            <constraint firstItem="TOy-Ov-8Dc" firstAttribute="top" secondItem="TiM-pk-zQV" secondAttribute="bottom" constant="60" id="xkm-YK-tSM"/>
+                            <constraint firstItem="whL-dp-cCe" firstAttribute="top" secondItem="34n-Ne-Lcw" secondAttribute="bottom" constant="8" id="yhd-Vu-R7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gNe-4I-Tic" secondAttribute="trailing" constant="16" id="zZU-YC-369"/>
+                            <constraint firstItem="34n-Ne-Lcw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zwh-UU-lYL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Piano" id="N1t-GZ-PuV">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-999" y="-595"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="VcL-LA-29z">
+            <objects>
+                <tableViewController id="Dwh-9b-0cG" customClass="TVController" customModule="_5_PianoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tjk-ed-aCJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="10" reuseIdentifier="ConfigCell" textLabel="DwU-Rw-EbE" style="IBUITableViewCellStyleDefault" id="AeR-Ei-VjG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AeR-Ei-VjG" id="b66-WF-fcH">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DwU-Rw-EbE">
+                                            <rect key="frame" x="26" y="0.0" width="314" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dwh-9b-0cG" id="g7G-qL-Uuv"/>
+                            <outlet property="delegate" destination="Dwh-9b-0cG" id="0ih-0R-38f"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="L0Z-I6-UID"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFc-pU-daw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1180" y="1019"/>
         </scene>
     </scenes>
 </document>
